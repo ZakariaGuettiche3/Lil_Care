@@ -6,4 +6,4 @@ The project is built using modern technologies including Next.js, Supabase, Micr
 
 ## Note
 
-Please note that this is a local application and is not designed to be deployed on a remote hosting platform
+Please note that this is a local application and is not intended to be deployed on a remote hosting platform
