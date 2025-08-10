@@ -1,0 +1,134 @@
+img {
+  width: 100px;
+}
+header .container {
+  height: 80px;
+}
+li {
+  padding-left: 10px;
+}
+header a {
+  padding: 3px 10px;
+  border-radius: 8px;
+  color: white;
+  text-decoration: none;
+  font-size: 15px;
+  font-weight: 500;
+  transition-duration: 0.3s;
+}
+header a.active {
+  background-color: var(--perpul-color);
+  font-weight: 700;
+}
+header ul a:hover {
+  background-color: var(--perpul-color);
+}
+
+header {
+  position: relative;
+}
+
+.specbtn:nth-child(1) {
+  margin-right: 15px;
+  background-color: var(--main-button-color);
+  color: black;
+}
+
+.specbtn:nth-child(2) {
+  background-color: var(--sec-button-color);
+}
+.myburg {
+  height: 24px;
+  cursor: pointer;
+  flex-direction: column;
+  width: 30px;
+  justify-content: space-around;
+  display: none;
+  margin-left: 30px;
+}
+i.fa-regular.fa-circle-xmark {
+  color: white;
+  transition-duration: 0.3s;
+  position: absolute;
+  display: none;
+  right: 27px;
+  font-size: 25px;
+  top: 23px;
+  cursor: pointer;
+}
+i.fa-regular.fa-circle-xmark:hover {
+  color: var(--perpul-color);
+}
+@media (max-width: 768px) {
+  header ul {
+    position: absolute;
+    flex-direction: column;
+    background: linear-gradient(
+      135deg,
+      rgba(255, 255, 255, 0.1),
+      rgba(255, 255, 255, 0)
+    );
+    backdrop-filter: blur(10px);
+    right: 0;
+    top: 0;
+    width: 50%;
+    height: 100vb;
+    justify-content: space-evenly;
+    transition-duration: 0.5s;
+    z-index: 100;
+  }
+  header ul.close {
+    transform: translateY(-100%);
+  }
+  .myburg {
+    display: flex;
+  }
+  i.fa-regular.fa-circle-xmark {
+    display: block;
+  }
+}
+
+@media (min-width: 768px) {
+  header ul {
+    justify-content: space-between;
+  }
+}
+
+.myburg > .a {
+  display: block;
+  width: 40%;
+  height: 2px;
+  background-color: white;
+  animation: bounc 0.5s alternate infinite linear;
+}
+.myburg > .a:nth-child(2) {
+  animation-delay: 0.2s;
+}
+.myburg > .a:nth-child(3) {
+  animation-delay: 0.4s;
+}
+@keyframes bounc {
+  to {
+    width: 100%;
+  }
+}
+
+@media (max-width: 900px) {
+  .specbtn {
+    padding: 10px 22px;
+  }
+  a {
+    font-size: 14px;
+  }
+}
+@media (max-width: 480px) {
+  header ul {
+    width: 100%;
+  }
+  .specbtn {
+    padding: 9px 11px;
+  }
+  img {
+    width: 64px;
+  }
+}

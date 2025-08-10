@@ -1,0 +1,145 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: "Roboto", sans-serif;
+}
+html {
+  scroll-behavior: smooth;
+}
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0px 15px;
+  position: relative;
+}
+
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+@media (min-width: 1200px) {
+  .container {
+    width: 1190px;
+  }
+}
+.AllContainer {
+  width: 100%;
+  min-height: 100vb;
+}
+.f-centre {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.f-between {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.f-arounde {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.t-c {
+  text-align: center;
+}
+.specbtn {
+  border-radius: 20px;
+  font-size: 12px;
+  color: white;
+  border: none;
+  font-weight: bold;
+  padding: 12px 35px;
+  letter-spacing: 1px;
+  outline: none;
+  cursor: pointer;
+  transition: transform 80ms ease-in;
+  width: fit-content;
+  align-self: center;
+}
+.specbtn:active {
+  transform: scale(0.95);
+}
+.specinput {
+  position: relative;
+}
+.specinput span {
+  position: absolute;
+  left: 44px;
+  top: 21px;
+  z-index: -1;
+  transition-duration: 0.3s;
+  padding: 0px 3px;
+  background-color: white;
+}
+
+.specinput input {
+  width: 100%;
+  margin: 10px 0px;
+  padding-left: 44px;
+  border: 1px solid black;
+  height: 40px;
+  background-color: transparent;
+  outline: none;
+  border-radius: 22px;
+  font-size: 15px;
+}
+.specinput .active {
+  transform: translate(-10px, -20px);
+  z-index: 0;
+  font-size: 15px;
+}
+.specinput i {
+  position: absolute;
+}
+.Error {
+  color: #af4242;
+  background-color: #fde8ec;
+  margin-top: 15px;
+  padding: 10px;
+  font-size: 15px;
+
+  border-radius: 4px;
+}
+ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+}
+.miniTitre {
+  color: white;
+  font-size: 23px;
+  text-transform: capitalize;
+  font-weight: bold;
+  margin: 10px 0px;
+}
+.specText {
+  color: #ffffffe0;
+  font-size: 15px;
+  font-weight: 300;
+  margin: 5px 0px;
+}
+.specText2 {
+  line-height: 26px;
+  margin: 20px 0px;
+  font-size: 15px;
+}
+.MainTitre {
+  font-size: 25px;
+  text-transform: capitalize;
+  font-weight: 900;
+  color: var(--titre-color);
+  line-height: 33px;
+  text-transform: capitalize;
+}
+@media (max-width: 768px) {
+  .MainTitre {
+    font-size: 19px;
+  }
+}

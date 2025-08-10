@@ -1,0 +1,111 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+body {
+	overflow: hidden;
+  }
+  [ role = "dialog"] {
+	max-height: 100vh;
+	overflow: auto;
+  }
+  
+  main {
+	height: calc(100vh - 64px);
+  }
+  .main.container {
+	height: calc(100vh - 64px);
+	overflow: auto;
+  }
+  .grid-cols-auto {
+	grid-template-columns: repeat(auto-fill, minmax(241px, 1fr));
+  }
+
+  .first\:hidden:first-child{
+	display: none;
+  }
+
+  .hover\:first\:flex:hover >:first-child{
+	display: flex !important;
+  }
+ canvas.atlas-map-canvas {
+	width: 100%;
+	height: 100%;
+  }
+ 
+  .pulseIcon {
+	width: 20px;
+	height: 20px;
+	background-color: rgba(0, 128, 255, 0.5);
+	border: 2px solid rgba(0, 128, 255, 1);
+	border-radius: 50%;
+	animation: pulse 1.5s infinite;
+  }
+  
+  @keyframes pulse {
+	0% {
+	  transform: scale(0.75);
+	  opacity: 1;
+	}
+	100% {
+	  transform: scale(1.5);
+	  opacity: 0;
+	}
+  }
+
+@layer base {
+	:root {
+		--background: 0 0% 100%;
+		--foreground: 224 71.4% 4.1%;
+		--card: 0 0% 100%;
+		--card-foreground: 224 71.4% 4.1%;
+		--popover: 0 0% 100%;
+		--popover-foreground: 224 71.4% 4.1%;
+		--primary: 262.1 83.3% 57.8%;
+		--primary-foreground: 210 20% 98%;
+		--secondary: 220 14.3% 95.9%;
+		--secondary-foreground: 220.9 39.3% 11%;
+		--muted: 220 14.3% 95.9%;
+		--muted-foreground: 220 8.9% 46.1%;
+		--accent: 220 14.3% 95.9%;
+		--accent-foreground: 220.9 39.3% 11%;
+		--destructive:0deg 76.36% 56.86%;
+		--destructive-foreground: 210 20% 98%;
+		--border: 220 13% 91%;
+		--input: 220 13% 91%;
+		--ring: 262.1 83.3% 57.8%;
+		--radius: 0.5rem;
+	}
+
+	.dark {
+		--background: 224 71.4% 4.1%;
+		--foreground: 210 20% 98%;
+		--card: 224 71.4% 4.1%;
+		--card-foreground: 210 20% 98%;
+		--popover: 224 71.4% 4.1%;
+		--popover-foreground: 210 20% 98%;
+		--primary: 263.4 70% 50.4%;
+		--primary-foreground: 210 20% 98%;
+		--secondary: 215 27.9% 16.9%;
+		--secondary-foreground: 210 20% 98%;
+		--muted: 215 27.9% 16.9%;
+		--muted-foreground: 217.9 10.6% 64.9%;
+		--accent: 215 27.9% 16.9%;
+		--accent-foreground: 210 20% 98%;
+		--destructive: 0deg 76.36% 56.86%;
+		--destructive-foreground: 210 20% 98%;
+		--border: 215 27.9% 16.9%;
+		--input: 215 27.9% 16.9%;
+		--ring: 263.4 70% 50.4%;
+	}
+}
+.capitalize {
+  text-transform: capitalize;
+}
+@layer base {
+	* {
+		@apply border-border;
+	}
+	body {
+		@apply bg-background text-foreground;
+	}
+}

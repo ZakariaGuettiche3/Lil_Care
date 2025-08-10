@@ -1,0 +1,13 @@
+.Dashboard header {
+  background-color: black;
+}
+.Dashboard .contents {
+  display: flex;
+  flex-direction: row-reverse;
+  min-height: calc(100vb - 80px);
+}
+.contents .out {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}

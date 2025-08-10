@@ -1,0 +1,27 @@
+.NewsBox img {
+  width: 100%;
+  height: 200px;
+}
+.NewsBox p.publisher {
+  font-size: 15px;
+  font-weight: 600;
+  margin: 15px 0px;
+}
+.NewsBox p.publisher span {
+  font-weight: 900;
+  text-transform: capitalize;
+}
+.NewsBox p.Titre {
+  font-size: 22px;
+  font-weight: 600;
+  color: var(--footer-color);
+  text-transform: capitalize;
+}
+.NewsBox .read {
+  color: var(--reade-more-color);
+  font-weight: bold;
+  font-size: 15px;
+  display: block;
+  margin: 10px 0px;
+  padding: 0px;
+}

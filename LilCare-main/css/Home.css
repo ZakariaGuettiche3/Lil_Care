@@ -1,0 +1,177 @@
+.Home {
+  background-image: url(./../image/sly\ of\ chkouppy.png),
+    url(./../image/backgound.png);
+  background-size: cover;
+  background-position: 70% 50%;
+}
+img.homeimage {
+  position: absolute;
+  bottom: -49px;
+  width: 111%;
+}
+.landing .text p:first-of-type {
+  font-size: 15px;
+  color: white;
+  font-weight: bold;
+  background-color: var(--blue-text-back);
+  padding: 7px 23px;
+  border-radius: 7px;
+  width: fit-content;
+}
+.landing .text p:nth-child(2) {
+  font-size: 50px;
+  font-weight: 600;
+  text-transform: capitalize;
+  margin: 25px 0px;
+  color: white;
+}
+.landing .text p:nth-child(2) span {
+  color: var(--spec-text-color);
+}
+.landing .text .specbtn {
+  background-color: var(--main-button-color);
+  color: black;
+}
+.homeimage {
+  background-image: url(./../image/iStock-538780331_wide.jpg);
+  width: 35%;
+  height: 300px;
+  background-position: center;
+  background-size: cover;
+  animation: blogs 5s ease-in-out infinite;
+  transition: all 1s ease-in-out;
+}
+@keyframes blogs {
+  0%,
+  100% {
+    border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+  }
+  50% {
+    border-radius: 30% 60% 70% 40% / 50% 60% 30% 60%;
+  }
+}
+.container.landing.f-arounde {
+  margin-top: 85px;
+}
+
+.info .container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.info .container .box {
+  width: 20%;
+  min-width: 200px;
+  margin: 40px;
+  text-align: center;
+}
+.info {
+  background-color: var(--background-color);
+}
+.info .container .box a {
+  font-size: 16px;
+  font-weight: bold;
+  display: block;
+  margin: 9px 0px 0px 0px;
+}
+.info .container .box img {
+  margin: 0px auto;
+  width: 150px;
+}
+.info .container .box img:first-of-type {
+  margin-top: -10px;
+}
+.footer-S-1 {
+  width: 100%;
+  height: 50px;
+  background-color: var(--back-blue);
+}
+.place {
+  margin: 50px 0px;
+}
+.place .container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.parent-image {
+  position: relative;
+  width: 40%;
+  min-width: 250px;
+  margin-right: 20px;
+  margin-bottom: 55px;
+}
+.parent-image img {
+  width: 80%;
+}
+.parent-desc {
+  width: 40%;
+  margin-top: 20px;
+  min-width: 250px;
+}
+.parent-desc a {
+  background-color: var(--main-button-color);
+  display: block;
+}
+.Sous-image {
+  background-color: var(--background-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  position: absolute;
+  right: 0;
+  height: 83%;
+  width: 70%;
+  bottom: -48px;
+  border-radius: 10px;
+}
+.offre {
+  background-color: var(--main-button-color);
+  text-align: center;
+  padding: 50px 0px;
+}
+.offre img:nth-child(1) {
+  position: absolute;
+  width: 30px;
+  bottom: -20px;
+  left: 5%;
+}
+.offre img:nth-child(2) {
+  position: absolute;
+  width: 20%;
+  right: 0;
+  top: -100%;
+}
+@media (max-width: 768px) {
+  .homeimage {
+    display: none;
+  }
+  .offre img:nth-child(2) {
+    display: none;
+  }
+}
+.news-area a.specbtn,
+.teacher-area a.specbtn {
+  background-color: var(--main-button-color);
+}
+.classe-area,
+.teacher-area {
+  margin: 50px 0px;
+}
+.our-news,
+.our-class,
+.our-techer {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  grid-gap: 40px;
+  margin: 40px 0px;
+}
+.classe-area {
+  padding: 20px 0px;
+  background-color: var(--footer-color);
+}
+.classe-area .miniTitre {
+  font-size: 25px;
+}
